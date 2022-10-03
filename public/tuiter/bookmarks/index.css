@@ -145,6 +145,14 @@ border-radius: 25px;
     font-size: 15px;
 }
 
+.wd-navbar .wd-heart{
+    color:red;
+}
+
+.wd-navbar .fa-heart{
+    color:red;
+}
+
 .wd-hyperlink {
 color: rgb(110, 118, 125);
 text-decoration: none;
@@ -165,4 +173,8 @@ text-decoration: none;
 .wd-icon {
     color: rgb(110, 118, 125);
     padding-right: 5px;
+}
+
+.fa{
+    padding-right: 12px;
 }
