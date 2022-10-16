@@ -2,9 +2,15 @@
     position: absolute;
 }
 
-.wd-icon {
+.wd-icon-grey {
     padding: 10px;
     min-width: 40px;
+}
+
+.wd-icon-grey {
+    padding: 10px;
+    min-width: 40px;
+    color: rgb(110, 118, 125);
 }
 
 .wd-search-box {
@@ -24,7 +30,7 @@
 }
 
 ::placeholder {
-    color: rgb(110, 118, 125);
+  color: rgb(110, 118, 125);
 }
 
 .wd-float-left {
@@ -37,9 +43,9 @@
 }
 
 .wd-image-style {
-    height: 100px;
-    width: 100px;
-    float: right;
+    height: 50px;
+    width: 50px;
+    float: left;
 }
 
 .wd-font-size {
@@ -61,21 +67,29 @@
 
 .wd-float-left-side-bar {
     float: left;
+    padding-right: 3px;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-right {
+    float: right;
 }
 
 .wd-bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    font-size: 25px;
-    font-weight: bold;
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .wd-container {
-    position: relative;
-    text-align: center;
-    color: white;
-    border: 1px solid rgb(47, 51, 54);
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .wd-background-color {
@@ -88,6 +102,10 @@
 
 .wd-icon-dark-mode {
     color: white;
+}
+
+.wd-heart-icon {
+    color: red;
 }
 
 .list-group-item-info.override-bs {
@@ -106,8 +124,8 @@
 }
 
 .btn-primary.override-bs2 {
-    background-color: white;
-    color: black;
+    background-color: rgb(0, 191, 255);
+    color: white;
     border: 0px;
 }
 
@@ -116,18 +134,15 @@
 }
 
 .wd-search-box-dark-mode {
-    background: rgb(32, 32, 32);
     border-radius: 18px;
     height: 35px;
     width: 100%;
     border-width: 0px;
-    color: white;
 }
 
 .wd-icon-dark-model {
     padding: 10px;
     min-width: 40px;
-    color: rgb(110, 118, 125);
 }
 
 .wd-search-twitter-text {
@@ -149,8 +164,17 @@
 }
 
 .wd-hyperlink {
-    color: rgb(0,191,255);
-    text-decoration: none;
+color: white;
+text-decoration: none;
+}
+
+.wd-hyperlink-grey {
+color: rgb(110, 118, 125);
+text-decoration: none;
+}
+
+.wd-color-grey {
+color: rgb(110, 118, 125);
 }
 
 .wd-side-bar-footer {
@@ -163,14 +187,14 @@
 }
 
 .wd-footer-container {
-    float: left;
-    padding: 7px;
+  float: left;
+  padding: 7px;
 }
 
 .wd-clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .active.override-active {
@@ -188,6 +212,54 @@
     color: white;
 }
 
-.nav-tabs{
-    border-bottom: none !important;
+.wd-bottom-padding {
+    padding-bottom: 12px;
+}
+
+.wd-text-padding {
+    padding-left:26px;
+}
+
+.wd-grid-row {
+    clear: both;
+}
+
+.wd-grid-col-one-fourth-page {
+    width: 11%;
+    float: left;
+}
+
+.wd-author-handle {
+    float:left;
+    padding-right: 3px;
+    padding-top: 8px;
+    font-size: 15px;
+}
+
+.wd-ellipsis-icon {
+    float: right;
+    padding-right: 10px;
+    color: rgb(110, 118, 125);
+}
+
+.border-thin {
+border-width: 1px;
+border-radius: 25px;
+}
+
+.border-grey { border-color: rgb(47, 51, 54); }
+
+.border-solid { border-style: solid; }
+
+.wd-post-image {
+border-top-left-radius: 25px;
+border-top-right-radius: 25px;
+}
+
+.wd-user-handle {
+    color: rgb(110, 118, 125);
+}
+
+.wd-post-summary-list-font-size {
+    font-size:10px;
 }
