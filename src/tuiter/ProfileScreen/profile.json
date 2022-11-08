@@ -1,0 +1,18 @@
+
+  {
+    "firstName": "Kartik",
+    "lastName": "Tickoo",
+    "handle": "kartik_tickoo",
+    "profilePicture": "",
+    "bannerPicture": "",
+    "bio": "Graduate Student, Northeastern University, Khoury College of Computer Science. Open to opportunities in full stack and web development.",
+    "website": "youtube.com/kartiktickoo",
+    "location": "Boston, MA",
+    "dateOfBirth": "1993-10-01",
+    "dateJoined": "4/2009",
+    "followingCount": "312",
+    "followersCount": "180",
+    "numberOfTweets": "5,199",
+    "profileImage": "https://pbs.twimg.com/media/D8dDZukXUAAXLdY.jpg",
+    "backgroundImage": "https://infinigeek.com/assets/common-programming-languages.png"
+  }
