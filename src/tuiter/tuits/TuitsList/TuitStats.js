@@ -1,24 +1,29 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {likeTuit} from "../tuits-reducer";
+import {updateTuitThunk} from "../../../services/tuits-thunks";
 
 const TuitStats = ({tuit}) => {
 
     const dispatch = useDispatch();
-    const likeTuitHandler = (id) => {
-        dispatch(likeTuit(id));
+    const likeTuitHandler = () => {
+        dispatch(updateTuitThunk({...tuit, likes : tuit.likes +1 }));
+    }
+
+    const dislikeTuitHandler = () => {
+        debugger;
+        dispatch(updateTuitThunk({...tuit, dislikes : tuit.dislikes +1 }));
     }
 
     return (<div className="row mt-2">
         <div className="col">
             <i className="fa fa-comment me-2"></i>
-            {tuit.stats.comments}
+            {tuit.comments}
         </div>
         <div className="col">
             <i className="fa fa-retweet me-2"></i>
-            {tuit.stats.retuits}
+            {tuit.retuits}
         </div>
-        <div className="col" onClick={likeTuitHandler}>
+        <button className="col" onClick={likeTuitHandler}>
             {
                 tuit.liked &&
                 <i className="fa fa-heart me-2"
@@ -28,8 +33,20 @@ const TuitStats = ({tuit}) => {
                 !tuit.liked &&
                 <i className="fa fa-heart me-2"></i>
             }
-            {tuit.stats.likes}
-        </div>
+            {tuit.likes}
+        </button>
+        <button className="col" onClick={dislikeTuitHandler}>
+            {
+                tuit.liked &&
+                <i className="fa fa-heart me-2"
+                   style={{color: tuit.liked ? 'red': "white"}}></i>
+            }
+            {
+                !tuit.liked &&
+                <i className="fa fa-heart me-2"></i>
+            }
+            {tuit.dislikes ? tuit.dislikes+1 : 1}
+        </button>
         <div className="col">
             <i className="fa fa-external-link-alt me-2"></i>
         </div>

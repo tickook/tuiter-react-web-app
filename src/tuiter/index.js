@@ -15,7 +15,7 @@ import ProfileScreen from "./ProfileScreen";
 import EditProfileScreen from "./EditProfileScreen";
 import profileReducer from "./ProfileScreen/profile-reducer";
 const store = configureStore(
-    {reducer: {who: whoReducer, tuits: tuitsReducer, profile : profileReducer}});
+    {reducer: {who: whoReducer, tuitsData: tuitsReducer, profile : profileReducer}});
 
 
 
