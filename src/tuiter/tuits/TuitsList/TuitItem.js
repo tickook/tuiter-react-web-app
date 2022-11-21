@@ -16,6 +16,7 @@ const TuitItem = ({tuit}) => {
     return (
         <li className="list-group-item">
             <table>
+                <tbody>
                 <tr>
                     <td className="align-text-top">
                         <img className="rounded-circle wd-avatar-image" alt="Not able 45 to load" src={tuit['logo-image']}/>
@@ -34,6 +35,7 @@ const TuitItem = ({tuit}) => {
                         <TuitStats tuit={tuit}/>
                     </td>
                 </tr>
+                </tbody>
             </table>
         </li>
     );

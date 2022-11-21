@@ -10,7 +10,6 @@ const TuitStats = ({tuit}) => {
     }
 
     const dislikeTuitHandler = () => {
-        debugger;
         dispatch(updateTuitThunk({...tuit, dislikes : tuit.dislikes +1 }));
     }
 
@@ -45,7 +44,7 @@ const TuitStats = ({tuit}) => {
                 !tuit.liked &&
                 <i className="fa fa-heart me-2"></i>
             }
-            {tuit.dislikes ? tuit.dislikes+1 : 1}
+            {tuit.dislikes}
         </button>
         <div className="col">
             <i className="fa fa-external-link-alt me-2"></i>
