@@ -19,7 +19,7 @@ const TuitItem = ({tuit}) => {
                 <tbody>
                 <tr>
                     <td className="align-text-top">
-                        <img className="rounded-circle wd-avatar-image" alt="Not able 45 to load" src={tuit['logo-image']}/>
+                        <img className="rounded-circle wd-avatar-image" alt="Not able 45 to load" src={tuit['logoImage']}/>
                     </td>
                     <td className="ps-3" style={{width: '100%'}}>
                         <i onClick={deleteTuitHandler} className="fa fa-remove fa-pull-right"></i>
